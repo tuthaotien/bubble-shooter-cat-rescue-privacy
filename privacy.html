@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubble Shooter Cat Rescue Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Bubble Shooter Cat Rescue, a 13+ bubble shooter puzzle game." />
+  <style>
+    :root {
+      --bg1: #07143a;
+      --bg2: #123f7a;
+      --bg3: #7b39d6;
+      --glass: rgba(255,255,255,.14);
+      --glass-2: rgba(255,255,255,.2);
+      --line: rgba(255,255,255,.22);
+      --text: #f9fdff;
+      --muted: rgba(249,253,255,.78);
+      --soft: rgba(249,253,255,.62);
+      --accent: #8ff7ff;
+      --accent2: #ffd75d;
+      --danger: #ff9ecb;
+      --shadow: rgba(0,0,0,.28);
+      font-family: "Segoe UI","SF Pro Text","Noto Sans",Arial,sans-serif;
+      color-scheme: light;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(92, 238, 255, .22), transparent 30%),
+        radial-gradient(circle at 80% 12%, rgba(255, 215, 93, .16), transparent 22%),
+        radial-gradient(circle at bottom left, rgba(255, 119, 216, .18), transparent 28%),
+        linear-gradient(140deg, var(--bg1), var(--bg2) 46%, var(--bg3));
+      padding: 20px 14px 42px;
+    }
+    .page { max-width: 980px; margin: 0 auto; }
+    .glass {
+      background: linear-gradient(135deg, var(--glass-2), var(--glass));
+      border: 1px solid var(--line);
+      box-shadow: 0 22px 44px var(--shadow), inset 0 1px 0 rgba(255,255,255,.16);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .hero {
+      border-radius: 28px;
+      padding: 26px;
+      display: grid;
+      grid-template-columns: 112px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+    .logo {
+      width: 112px;
+      height: 112px;
+      border-radius: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.42);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 12px 26px rgba(0,0,0,.26);
+    }
+    .logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); letter-spacing: -.02em; }
+    h2 { margin: 8px 0 0; font-size: clamp(16px, 2vw, 20px); color: var(--muted); }
+    .intro { margin: 14px 0 0; color: var(--muted); line-height: 1.65; font-size: 15px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .chip {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.18);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .toolbar { margin-top: 18px; display: grid; gap: 12px; }
+    .langs {
+      border-radius: 22px;
+      padding: 14px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .lang-btn {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.1);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: .18s ease;
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .lang-btn.active {
+      background: rgba(143, 247, 255, .2);
+      border-color: rgba(143,247,255,.82);
+    }
+    .note {
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: var(--soft);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .content { margin-top: 18px; display: grid; gap: 14px; }
+    .section { border-radius: 22px; padding: 22px; }
+    .section h3 { margin: 0 0 10px; font-size: clamp(18px, 2.2vw, 22px); }
+    .section p, .section li { color: var(--muted); font-size: 15px; line-height: 1.72; }
+    .section ul { margin: 10px 0 0; padding-left: 20px; }
+    .section a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+    .tag {
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      color: var(--text);
+      border: 1px solid rgba(255,255,255,.14);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .footer { margin-top: 18px; border-radius: 22px; padding: 16px 18px; color: var(--soft); font-size: 13px; line-height: 1.6; }
+    @media (max-width: 720px) {
+      body { padding: 14px 10px 30px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      .logo { width: 92px; height: 92px; border-radius: 22px; }
+      .section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero glass">
+      <div class="logo"><img src="assets/icon/icon.png" alt="Bubble Shooter Cat Rescue icon" /></div>
+      <div>
+        <h1 id="title">Privacy Policy</h1>
+        <h2 id="subtitle">Bubble Shooter Cat Rescue</h2>
+        <p class="intro" id="intro"></p>
+        <div class="chips" id="chips"></div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="langs glass" id="langs" aria-label="Language selector"></div>
+      <div class="note glass" id="note"></div>
+    </section>
+
+    <section class="content" id="content"></section>
+
+    <footer class="footer glass" id="footer"></footer>
+  </main>
+
+  <script>
+    const sections = [
+      "summary",
+      "data",
+      "sensors",
+      "ads",
+      "use",
+      "europe",
+      "age",
+      "retention",
+      "security",
+      "changes",
+      "contact"
+    ];
+
+    const t = {
+      en: {
+        label: "English",
+        title: "Privacy Policy",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue is a 13+ bubble shooter puzzle game about rescuing cats. This policy explains what information the app uses, what stays on your device, and what rights players in Europe may have.",
+        chips: ["13+", "No account", "Google AdMob", "Rewarded ads", "Interstitial ads", "EU/EEA consent"],
+        note: "This policy is written for the current app version reviewed in the project: Flutter/Flame game, no login, Google AdMob advertising, no enabled in-app purchases, and local gameplay progress. Keep this page consistent with the app store data safety form before each release.",
+        summaryTitle: "1. Quick Summary",
+        summaryHtml: "<p>In the current version, Bubble Shooter Cat Rescue does not ask you to create an account and does not require your name, email address, phone number, precise location, camera, microphone, contacts, photos, or address book.</p><p>The app may use local gameplay information, such as level progress, score, stars, settings, boosters, and game state, to provide and improve the game experience. The app also uses Google AdMob to show optional rewarded ads and occasional interstitial ads. Gameplay progress is intended to stay on your device unless a future version clearly introduces online services and updates this policy.</p>",
+        dataTitle: "2. Information Stored or Processed",
+        dataHtml: "<p>The current app may process the following categories:</p><ul><li><strong>Gameplay progress:</strong> unlocked level, score, stars, rescued cats, boosters, and related game state.</li><li><strong>Settings:</strong> music and sound effect preferences.</li><li><strong>Technical app state:</strong> loading state, level data, local assets, and gameplay events needed for the game to run.</li></ul><p>These items are used to operate the game and are not used to identify you personally.</p>",
+        sensorsTitle: "3. Motion Sensor Use",
+        sensorsHtml: "<p>The app uses device motion sensors through the Flutter <span class='tag'>sensors_plus</span> package to create visual effects such as subtle parallax or background movement. Motion sensor readings are used locally for gameplay/visual presentation and are not used to identify you, track you across apps, or determine your precise location.</p>",
+        adsTitle: "4. Advertising, Analytics, Purchases, and Third Parties",
+        adsHtml: "<p>Bubble Shooter Cat Rescue uses Google AdMob to show optional rewarded ads and occasional interstitial ads.</p><ul><li><strong>Rewarded ads:</strong> when a booster item reaches 0, the player may choose to watch an ad to receive +1 booster. A cooldown limits repeated rewarded ads.</li><li><strong>Interstitial ads:</strong> the first 5 levels do not show interstitial ads. After that, an interstitial may appear after a win and before the Victory panel on a limited 4/5-level cadence.</li><li><strong>In-app purchases:</strong> not enabled in the current build.</li><li><strong>Analytics:</strong> not enabled in the current build.</li><li><strong>Third-party services:</strong> Google AdMob, Flutter/Flame, local game assets, and the sensors package for motion-based visual effects.</li></ul><p>When ads are requested, Google and its partners may process information such as device identifiers, IP address, approximate location, ad interaction data, diagnostics, and consent choices according to their own policies. The app requests non-personalized ads by default to reduce privacy impact.</p><p>Players in the EEA, United Kingdom, and Switzerland may see a consent message through Google's User Messaging Platform before ads are requested where required. Learn more at <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> and <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>.</p>",
+        useTitle: "5. How Information Is Used",
+        useHtml: "<ul><li>To run the game and display levels, bubbles, cats, obstacles, boosters, animations, audio, and visual effects.</li><li>To save and restore progress and settings on the device.</li><li>To tune gameplay, difficulty, and user experience inside the app.</li><li>To diagnose app behavior during development and testing.</li></ul>",
+        europeTitle: "6. Players in Europe: GDPR/UK GDPR Information",
+        europeHtml: "<p>If you are in the European Economic Area, the United Kingdom, or Switzerland, you may have rights under data protection law. Depending on your situation, these may include the right to access, correct, delete, restrict, or object to certain processing, withdraw consent where processing is based on consent, and complain to your local data protection authority.</p><p>Most gameplay information is stored locally on your device. You can delete it by clearing the app's storage or uninstalling the app. For advertising, Google AdMob and its partners may act as independent controllers or processors depending on the ad service and consent choice.</p><p>The main legal bases are providing the game experience you request, legitimate interests in operating and securing the app, and consent where required for advertising-related storage/access or personalized advertising. The app uses Google's User Messaging Platform to request or update consent in Europe where required.</p>",
+        ageTitle: "7. Age Rating and Children",
+        ageHtml: "<p>Bubble Shooter Cat Rescue is intended for players aged 13 and older. The app is not directed to children under 13. In some European countries, users under 16 may need consent from a parent or guardian for certain online services. The current app does not require account registration or knowingly collect personal information from children.</p><p>If you believe a child has provided personal information through a future online feature, please contact us so it can be reviewed and deleted where appropriate.</p>",
+        retentionTitle: "8. Retention and Deletion",
+        retentionHtml: "<p>Local gameplay data remains on the device for as long as the app is installed or until the app data is cleared by the user or operating system. You can delete local data by using your device settings to clear the app's storage or by uninstalling the app.</p>",
+        securityTitle: "9. Security",
+        securityHtml: "<p>We design the app to minimize personal data collection. No method of storage or transmission is perfectly secure, but limiting data to local gameplay use helps reduce privacy risk in the current version.</p>",
+        changesTitle: "10. Changes to This Policy",
+        changesHtml: "<p>We may update this Privacy Policy when the app changes, for example if new features, ads, analytics, purchases, cloud saves, or online services are added. The updated version will show a new effective date.</p>",
+        contactTitle: "11. Contact",
+        contactHtml: "<p>For privacy questions, please use the developer contact information shown on the app store listing for Bubble Shooter Cat Rescue.</p><p>If you publish this page on a website, replace this sentence with your official support email or company contact before submitting the app to stores.</p>",
+        footer: "Effective date: June 1, 2026. This Privacy Policy should be kept consistent with the actual app features, app store data safety forms, and regional distribution settings."
+      },
+      vi: {
+        label: "Tiếng Việt",
+        title: "Chính sách quyền riêng tư",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue là game bắn bong bóng giải cứu mèo dành cho người chơi từ 13 tuổi trở lên. Trang này giải thích app dùng thông tin gì, dữ liệu nào lưu trên thiết bị, và quyền riêng tư của người chơi ở Châu Âu.",
+        chips: ["13+", "Không cần tài khoản", "Google AdMob", "Ads thưởng", "Ads xen kẽ", "Đồng ý EU/EEA"],
+        note: "Nội dung này được viết theo trạng thái app hiện tại trong dự án: game Flutter/Flame, không đăng nhập, có quảng cáo Google AdMob, chưa bật mua hàng trong app, và dữ liệu tiến trình chủ yếu lưu cục bộ. Hãy giữ trang này khớp với biểu mẫu Data Safety trên app store trước mỗi lần phát hành.",
+        summaryTitle: "1. Tóm tắt nhanh",
+        summaryHtml: "<p>Ở phiên bản hiện tại, Bubble Shooter Cat Rescue không yêu cầu tạo tài khoản và không yêu cầu tên, email, số điện thoại, vị trí chính xác, camera, micro, danh bạ, ảnh hoặc sổ địa chỉ.</p><p>App có thể dùng dữ liệu chơi cục bộ như màn đã mở khóa, điểm, sao, số mèo đã cứu, item hỗ trợ, cài đặt âm thanh và trạng thái ván chơi để vận hành game. App cũng dùng Google AdMob để hiển thị ads thưởng tùy chọn và ads xen kẽ có giới hạn. Dữ liệu tiến trình được thiết kế để ở trên thiết bị, trừ khi phiên bản tương lai thêm dịch vụ online và cập nhật chính sách rõ ràng.</p>",
+        dataTitle: "2. Thông tin được lưu hoặc xử lý",
+        dataHtml: "<p>Phiên bản hiện tại có thể xử lý các nhóm thông tin sau:</p><ul><li><strong>Tiến trình chơi:</strong> level đã mở khóa, điểm, sao, mèo đã cứu, item hỗ trợ và trạng thái gameplay liên quan.</li><li><strong>Cài đặt:</strong> bật/tắt nhạc và hiệu ứng âm thanh.</li><li><strong>Trạng thái kỹ thuật của app:</strong> trạng thái tải game, dữ liệu level, asset cục bộ và sự kiện gameplay cần thiết để game chạy.</li><li><strong>Dữ liệu quảng cáo:</strong> Google AdMob có thể xử lý dữ liệu cần thiết để tải, phân phối, đo lường và bảo vệ quảng cáo.</li></ul><p>Các dữ liệu gameplay dùng để vận hành game, không dùng để nhận dạng cá nhân người chơi trong app.</p>",
+        sensorsTitle: "3. Sử dụng cảm biến chuyển động",
+        sensorsHtml: "<p>App dùng cảm biến chuyển động của thiết bị thông qua package Flutter <span class='tag'>sensors_plus</span> để tạo hiệu ứng hình ảnh như nền có chiều sâu/parallax. Dữ liệu cảm biến chỉ được dùng cục bộ cho hiển thị và trải nghiệm game, không dùng để định danh người chơi, theo dõi người chơi giữa các app, hoặc xác định vị trí chính xác.</p>",
+        adsTitle: "4. Quảng cáo, analytics, mua hàng và bên thứ ba",
+        adsHtml: "<p>Bubble Shooter Cat Rescue dùng Google AdMob để hiển thị ads thưởng tùy chọn và ads xen kẽ có giới hạn.</p><ul><li><strong>Ads thưởng:</strong> khi item hỗ trợ về 0, người chơi có thể chọn xem quảng cáo để nhận +1 item. Có thời gian chờ để hạn chế xem lặp liên tục.</li><li><strong>Ads xen kẽ:</strong> 5 level đầu không hiện ads xen kẽ. Sau đó ads có thể hiện sau khi thắng ván và trước bảng Victory theo nhịp giới hạn 4/5 level.</li><li><strong>Mua hàng trong app:</strong> chưa bật trong bản hiện tại.</li><li><strong>Analytics:</strong> chưa bật trong bản hiện tại.</li><li><strong>Dịch vụ bên thứ ba:</strong> Google AdMob, Flutter/Flame, asset game cục bộ, và package sensors cho hiệu ứng chuyển động.</li></ul><p>Khi app yêu cầu quảng cáo, Google và đối tác có thể xử lý thông tin như mã nhận dạng thiết bị, địa chỉ IP, vị trí gần đúng, dữ liệu tương tác quảng cáo, chẩn đoán và lựa chọn đồng ý theo chính sách riêng của họ. App mặc định yêu cầu quảng cáo không cá nhân hóa để giảm tác động quyền riêng tư.</p><p>Người chơi ở EEA, Vương quốc Anh và Thụy Sĩ có thể thấy thông báo đồng ý qua Google User Messaging Platform trước khi app yêu cầu quảng cáo nếu luật yêu cầu. Xem thêm tại <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> và <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>.</p>",
+        useTitle: "5. Mục đích sử dụng thông tin",
+        useHtml: "<ul><li>Để vận hành game và hiển thị level, bong bóng, mèo, vật cản, item, animation, âm thanh và hiệu ứng hình ảnh.</li><li>Để lưu và khôi phục tiến trình/cài đặt trên thiết bị.</li><li>Để hiển thị ads thưởng tùy chọn và ads xen kẽ có giới hạn.</li><li>Để tinh chỉnh gameplay, độ khó và trải nghiệm trong app.</li><li>Để kiểm tra hành vi app trong quá trình phát triển và test.</li></ul>",
+        europeTitle: "6. Người chơi ở Châu Âu: thông tin GDPR/UK GDPR",
+        europeHtml: "<p>Nếu bạn ở Khu vực Kinh tế Châu Âu, Vương quốc Anh hoặc Thụy Sĩ, bạn có thể có các quyền theo luật bảo vệ dữ liệu, ví dụ quyền truy cập, chỉnh sửa, xóa, hạn chế hoặc phản đối một số hoạt động xử lý dữ liệu, quyền rút lại đồng ý nếu việc xử lý dựa trên đồng ý, và quyền khiếu nại với cơ quan bảo vệ dữ liệu tại địa phương.</p><p>Phần lớn dữ liệu gameplay được lưu cục bộ trên thiết bị. Bạn có thể xóa bằng cách xóa dữ liệu app trong cài đặt thiết bị hoặc gỡ cài đặt app. Với quảng cáo, Google AdMob và đối tác có thể đóng vai trò bên kiểm soát dữ liệu độc lập hoặc bên xử lý tùy theo dịch vụ quảng cáo và lựa chọn đồng ý.</p><p>Cơ sở pháp lý chính là cung cấp trải nghiệm game theo yêu cầu của người chơi, lợi ích hợp pháp trong việc vận hành và bảo mật app, và sự đồng ý khi luật yêu cầu đối với lưu/truy cập dữ liệu liên quan quảng cáo hoặc quảng cáo cá nhân hóa. App dùng Google User Messaging Platform để hỏi hoặc cập nhật lựa chọn đồng ý ở Châu Âu khi cần.</p>",
+        ageTitle: "7. Độ tuổi và trẻ em",
+        ageHtml: "<p>Bubble Shooter Cat Rescue dành cho người chơi từ 13 tuổi trở lên. App không nhắm đến trẻ em dưới 13 tuổi. Ở một số quốc gia Châu Âu, người dùng dưới 16 tuổi có thể cần sự đồng ý của phụ huynh/người giám hộ cho một số dịch vụ online. App không yêu cầu đăng ký tài khoản và không cố ý thu thập thông tin cá nhân từ trẻ em.</p><p>Nếu bạn cho rằng trẻ em đã cung cấp thông tin cá nhân thông qua một tính năng online trong tương lai, vui lòng liên hệ để chúng tôi xem xét và xóa khi phù hợp.</p>",
+        retentionTitle: "8. Thời gian lưu và xóa dữ liệu",
+        retentionHtml: "<p>Dữ liệu gameplay cục bộ tồn tại trên thiết bị trong thời gian app được cài đặt hoặc cho đến khi người dùng/hệ điều hành xóa dữ liệu app. Bạn có thể xóa dữ liệu cục bộ bằng cách xóa bộ nhớ app trong cài đặt thiết bị hoặc gỡ cài đặt app. Dữ liệu quảng cáo do Google xử lý tuân theo chính sách và thời hạn lưu của Google.</p>",
+        securityTitle: "9. Bảo mật",
+        securityHtml: "<p>App được thiết kế theo hướng hạn chế thu thập dữ liệu cá nhân. Không có phương thức lưu trữ hoặc truyền dữ liệu nào an toàn tuyệt đối, nhưng việc giới hạn dữ liệu gameplay ở phạm vi cục bộ giúp giảm rủi ro quyền riêng tư.</p>",
+        changesTitle: "10. Thay đổi chính sách",
+        changesHtml: "<p>Chính sách này có thể được cập nhật khi app thay đổi, ví dụ khi thêm tính năng mới, quảng cáo, analytics, mua hàng, cloud save hoặc dịch vụ online. Bản cập nhật sẽ hiển thị ngày hiệu lực mới.</p>",
+        contactTitle: "11. Liên hệ",
+        contactHtml: "<p>Với câu hỏi về quyền riêng tư, vui lòng dùng thông tin liên hệ nhà phát triển hiển thị trên trang app store của Bubble Shooter Cat Rescue.</p><p>Nếu bạn đăng trang này lên website, hãy thay câu này bằng email hỗ trợ hoặc thông tin công ty chính thức trước khi gửi app lên store.</p>",
+        footer: "Ngày hiệu lực: 1 tháng 6 năm 2026. Chính sách này cần được giữ nhất quán với tính năng thực tế của app, biểu mẫu Data Safety trên app store và khu vực phát hành."
+      },
+      ko: {
+        label: "한국어",
+        title: "개인정보 처리방침",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue는 고양이를 구하는 13세 이상 대상 버블 슈터 퍼즐 게임입니다. 이 방침은 앱이 어떤 정보를 사용하고, 어떤 데이터가 기기에 남으며, 유럽 지역 플레이어에게 어떤 권리가 있을 수 있는지 설명합니다.",
+        chips: ["13+", "계정 없음", "Google AdMob", "보상형 광고", "전면 광고", "EU/EEA 동의"],
+        note: "이 방침은 현재 프로젝트 버전 기준으로 작성되었습니다: Flutter/Flame 게임, 로그인 없음, Google AdMob 광고 사용, 인앱 구매 미사용, 게임 진행 데이터는 주로 기기에 로컬 저장됩니다. 출시 전마다 앱 스토어 데이터 안전 양식과 이 페이지가 일치하는지 확인하세요.",
+        summaryTitle: "1. 요약",
+        summaryHtml: "<p>현재 버전의 Bubble Shooter Cat Rescue는 계정 생성을 요구하지 않으며 이름, 이메일 주소, 전화번호, 정확한 위치, 카메라, 마이크, 연락처, 사진 또는 주소록을 요구하지 않습니다.</p><p>앱은 레벨 진행, 점수, 별, 구출한 고양이 수, 부스터, 설정 및 게임 상태와 같은 로컬 게임 정보를 사용하여 게임 경험을 제공할 수 있습니다. 또한 Google AdMob을 사용하여 선택형 보상 광고와 제한적인 전면 광고를 표시합니다. 게임 진행 정보는 향후 온라인 서비스가 명확히 추가되고 이 방침이 업데이트되지 않는 한 기기에 남도록 설계되어 있습니다.</p>",
+        dataTitle: "2. 저장 또는 처리되는 정보",
+        dataHtml: "<p>현재 앱은 다음 범주의 정보를 처리할 수 있습니다.</p><ul><li><strong>게임 진행:</strong> 잠금 해제된 레벨, 점수, 별, 구출한 고양이, 부스터 및 관련 게임 상태.</li><li><strong>설정:</strong> 음악 및 효과음 설정.</li><li><strong>기술적 앱 상태:</strong> 로딩 상태, 레벨 데이터, 로컬 에셋 및 게임 실행에 필요한 이벤트.</li><li><strong>광고 데이터:</strong> Google AdMob은 광고 로드, 제공, 측정 및 보호에 필요한 데이터를 처리할 수 있습니다.</li></ul><p>게임 데이터는 앱 운영을 위해 사용되며 앱 내에서 플레이어를 개인적으로 식별하기 위한 용도로 사용되지 않습니다.</p>",
+        sensorsTitle: "3. 동작 센서 사용",
+        sensorsHtml: "<p>앱은 Flutter <span class='tag'>sensors_plus</span> 패키지를 통해 기기 동작 센서를 사용하여 미세한 패럴랙스나 배경 움직임 같은 시각 효과를 만듭니다. 센서 값은 게임/시각 표현을 위해 로컬에서만 사용되며 사용자를 식별하거나 앱 간 추적을 하거나 정확한 위치를 파악하는 데 사용되지 않습니다.</p>",
+        adsTitle: "4. 광고, 분석, 구매 및 제3자",
+        adsHtml: "<p>Bubble Shooter Cat Rescue는 Google AdMob을 사용하여 선택형 보상 광고와 제한적인 전면 광고를 표시합니다.</p><ul><li><strong>보상형 광고:</strong> 부스터 아이템 수가 0이 되면 플레이어가 광고 시청을 선택하여 +1 부스터를 받을 수 있습니다. 반복 시청을 제한하기 위해 대기 시간이 적용됩니다.</li><li><strong>전면 광고:</strong> 처음 5개 레벨에는 전면 광고가 표시되지 않습니다. 이후에는 승리 후 Victory 패널이 표시되기 전에 제한적인 4/5레벨 주기로 전면 광고가 표시될 수 있습니다.</li><li><strong>인앱 구매:</strong> 현재 빌드에서는 활성화되어 있지 않습니다.</li><li><strong>분석:</strong> 현재 빌드에서는 활성화되어 있지 않습니다.</li><li><strong>제3자 서비스:</strong> Google AdMob, Flutter/Flame, 로컬 게임 에셋, 동작 기반 시각 효과를 위한 sensors 패키지.</li></ul><p>광고가 요청되면 Google 및 파트너는 자체 정책에 따라 기기 식별자, IP 주소, 대략적인 위치, 광고 상호작용 데이터, 진단 정보 및 동의 선택과 같은 정보를 처리할 수 있습니다. 앱은 개인정보 영향을 줄이기 위해 기본적으로 개인 맞춤이 아닌 광고를 요청합니다.</p><p>EEA, 영국 및 스위스의 플레이어는 법에서 요구하는 경우 광고 요청 전에 Google User Messaging Platform을 통한 동의 메시지를 볼 수 있습니다. 자세한 내용은 <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> 및 <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>를 참조하세요.</p>",
+        useTitle: "5. 정보 사용 방법",
+        useHtml: "<ul><li>레벨, 버블, 고양이, 장애물, 부스터, 애니메이션, 오디오 및 시각 효과를 표시하고 게임을 실행하기 위해.</li><li>기기에서 진행 상황과 설정을 저장 및 복원하기 위해.</li><li>선택형 보상 광고와 제한적인 전면 광고를 표시하기 위해.</li><li>앱 내 게임플레이, 난이도 및 사용자 경험을 조정하기 위해.</li><li>개발 및 테스트 중 앱 동작을 진단하기 위해.</li></ul>",
+        europeTitle: "6. 유럽 플레이어: GDPR/UK GDPR 정보",
+        europeHtml: "<p>유럽경제지역, 영국 또는 스위스에 있는 경우 데이터 보호법에 따른 권리가 있을 수 있습니다. 여기에는 접근, 정정, 삭제, 처리 제한 또는 반대, 동의에 근거한 처리에 대한 동의 철회, 현지 데이터 보호 기관에 불만을 제기할 권리가 포함될 수 있습니다.</p><p>대부분의 게임 정보는 기기에 로컬로 저장됩니다. 앱 저장공간을 삭제하거나 앱을 제거하여 삭제할 수 있습니다. 광고의 경우 Google AdMob 및 그 파트너는 광고 서비스 및 동의 선택에 따라 독립 컨트롤러 또는 처리자 역할을 할 수 있습니다.</p><p>주요 법적 근거는 요청한 게임 경험 제공, 앱 운영 및 보안에 대한 정당한 이익, 그리고 광고 관련 저장/접근 또는 개인 맞춤 광고에 대해 법에서 요구되는 경우의 동의입니다. 앱은 필요한 경우 유럽에서 Google User Messaging Platform을 사용하여 동의를 요청하거나 업데이트합니다.</p>",
+        ageTitle: "7. 연령 등급 및 아동",
+        ageHtml: "<p>Bubble Shooter Cat Rescue는 13세 이상 플레이어를 대상으로 합니다. 앱은 13세 미만 아동을 대상으로 하지 않습니다. 일부 유럽 국가에서는 16세 미만 사용자가 특정 온라인 서비스에 대해 부모 또는 보호자의 동의가 필요할 수 있습니다. 앱은 계정 등록을 요구하지 않으며 아동으로부터 개인정보를 의도적으로 수집하지 않습니다.</p><p>향후 온라인 기능을 통해 아동이 개인정보를 제공했다고 생각되는 경우, 검토 및 적절한 삭제를 위해 연락해 주세요.</p>",
+        retentionTitle: "8. 보관 및 삭제",
+        retentionHtml: "<p>로컬 게임 데이터는 앱이 설치되어 있는 동안 또는 사용자/운영체제가 앱 데이터를 삭제할 때까지 기기에 남습니다. 기기 설정에서 앱 저장공간을 삭제하거나 앱을 제거하여 로컬 데이터를 삭제할 수 있습니다. Google이 처리하는 광고 데이터는 Google의 정책 및 보관 기간을 따릅니다.</p>",
+        securityTitle: "9. 보안",
+        securityHtml: "<p>앱은 개인정보 수집을 최소화하도록 설계되었습니다. 어떤 저장 또는 전송 방법도 완전히 안전할 수는 없지만, 게임플레이 데이터를 주로 로컬 범위로 제한하면 개인정보 위험을 줄이는 데 도움이 됩니다.</p>",
+        changesTitle: "10. 이 방침의 변경",
+        changesHtml: "<p>새 기능, 광고, 분석, 구매, 클라우드 저장 또는 온라인 서비스가 추가되는 등 앱이 변경될 때 이 개인정보 처리방침을 업데이트할 수 있습니다. 업데이트된 버전에는 새로운 시행일이 표시됩니다.</p>",
+        contactTitle: "11. 문의",
+        contactHtml: "<p>개인정보 관련 질문은 Bubble Shooter Cat Rescue의 앱 스토어 등록 정보에 표시된 개발자 연락처를 사용해 주세요.</p><p>이 페이지를 웹사이트에 게시하는 경우, 앱 스토어 제출 전에 이 문장을 공식 지원 이메일 또는 회사 연락처로 교체하세요.</p>",
+        footer: "시행일: 2026년 6월 1일. 이 개인정보 처리방침은 실제 앱 기능, 앱 스토어 데이터 안전 양식 및 지역별 배포 설정과 일치해야 합니다."
+      },
+      ja: {
+        label: "日本語",
+        title: "プライバシーポリシー",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescueは、猫を救出する13歳以上向けのバブルシューティングパズルゲームです。本ポリシーでは、アプリが使用する情報、端末に残るデータ、欧州のプレイヤーが有する可能性のある権利について説明します。",
+        chips: ["13+", "アカウント不要", "Google AdMob", "リワード広告", "インタースティシャル広告", "EU/EEA同意"],
+        note: "本ポリシーは現在のプロジェクト構成に基づいています: Flutter/Flameゲーム、ログインなし、Google AdMob広告あり、アプリ内課金なし、ゲーム進行データは主に端末内に保存。リリースごとに、ストアのデータセーフティフォームと本ページが一致していることを確認してください。",
+        summaryTitle: "1. 概要",
+        summaryHtml: "<p>現在のバージョンのBubble Shooter Cat Rescueでは、アカウント作成は不要で、氏名、メールアドレス、電話番号、正確な位置情報、カメラ、マイク、連絡先、写真、アドレス帳を要求しません。</p><p>アプリは、レベル進行、スコア、スター、救出した猫、ブースター、設定、ゲーム状態などのローカルゲーム情報を使用してゲーム体験を提供する場合があります。また、Google AdMobを使用して任意のリワード広告と限定的なインタースティシャル広告を表示します。ゲーム進行データは、将来オンラインサービスが明確に導入され本ポリシーが更新されない限り、端末内に保存される設計です。</p>",
+        dataTitle: "2. 保存または処理される情報",
+        dataHtml: "<p>現在のアプリは次のカテゴリの情報を処理する場合があります。</p><ul><li><strong>ゲーム進行:</strong> 解放済みレベル、スコア、スター、救出した猫、ブースター、関連するゲーム状態。</li><li><strong>設定:</strong> 音楽および効果音の設定。</li><li><strong>技術的なアプリ状態:</strong> 読み込み状態、レベルデータ、ローカルアセット、ゲーム実行に必要なイベント。</li><li><strong>広告データ:</strong> Google AdMobは、広告の読み込み、配信、測定、保護に必要なデータを処理する場合があります。</li></ul><p>ゲームデータはアプリの運営に使用され、アプリ内でプレイヤーを個人として識別するためには使用されません。</p>",
+        sensorsTitle: "3. モーションセンサーの使用",
+        sensorsHtml: "<p>アプリはFlutterの<span class='tag'>sensors_plus</span>パッケージを通じて端末のモーションセンサーを使用し、微妙なパララックスや背景の動きなどの視覚効果を作成します。センサー値はゲーム/表示目的でローカルにのみ使用され、ユーザー識別、アプリ間追跡、正確な位置の特定には使用されません。</p>",
+        adsTitle: "4. 広告、分析、購入、第三者",
+        adsHtml: "<p>Bubble Shooter Cat RescueはGoogle AdMobを使用して、任意のリワード広告と限定的なインタースティシャル広告を表示します。</p><ul><li><strong>リワード広告:</strong> ブースターアイテムが0になった場合、プレイヤーは広告を視聴して+1ブースターを受け取ることを選択できます。連続視聴を制限するためクールダウンがあります。</li><li><strong>インタースティシャル広告:</strong> 最初の5レベルでは表示されません。その後、勝利後、Victoryパネルの前に、限定的な4/5レベル間隔で表示される場合があります。</li><li><strong>アプリ内課金:</strong> 現在のビルドでは有効ではありません。</li><li><strong>分析:</strong> 現在のビルドでは有効ではありません。</li><li><strong>第三者サービス:</strong> Google AdMob、Flutter/Flame、ローカルゲームアセット、動きに基づく視覚効果のためのsensorsパッケージ。</li></ul><p>広告がリクエストされると、Googleおよびそのパートナーは、それぞれのポリシーに従い、端末識別子、IPアドレス、おおよその位置、広告操作データ、診断情報、同意の選択などを処理する場合があります。アプリはプライバシーへの影響を抑えるため、デフォルトで非パーソナライズ広告をリクエストします。</p><p>EEA、英国、スイスのプレイヤーには、法律で必要な場合、広告リクエスト前にGoogle User Messaging Platformによる同意メッセージが表示されることがあります。詳しくは<a href='https://policies.google.com/privacy'>Google Privacy Policy</a>および<a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>をご覧ください。</p>",
+        useTitle: "5. 情報の使用目的",
+        useHtml: "<ul><li>ゲームを実行し、レベル、バブル、猫、障害物、ブースター、アニメーション、音声、視覚効果を表示するため。</li><li>端末上で進行状況と設定を保存・復元するため。</li><li>任意のリワード広告と限定的なインタースティシャル広告を表示するため。</li><li>アプリ内のゲームプレイ、難易度、ユーザー体験を調整するため。</li><li>開発およびテスト中にアプリの動作を診断するため。</li></ul>",
+        europeTitle: "6. 欧州のプレイヤー: GDPR/UK GDPR情報",
+        europeHtml: "<p>欧州経済領域、英国、またはスイスにいる場合、データ保護法上の権利を有する場合があります。これには、アクセス、訂正、削除、処理の制限または異議申し立て、同意に基づく処理に対する同意の撤回、地域のデータ保護機関への苦情申立ての権利が含まれる場合があります。</p><p>ほとんどのゲーム情報は端末にローカル保存されます。アプリのストレージを消去するか、アプリをアンインストールすることで削除できます。広告については、Google AdMobおよびそのパートナーが、広告サービスおよび同意選択に応じて独立した管理者または処理者として機能する場合があります。</p><p>主な法的根拠は、要求されたゲーム体験の提供、アプリの運営と保護における正当な利益、広告関連の保存/アクセスまたはパーソナライズ広告について法律上必要な場合の同意です。アプリは必要に応じて、欧州でGoogle User Messaging Platformを使用して同意を取得または更新します。</p>",
+        ageTitle: "7. 年齢レーティングと子ども",
+        ageHtml: "<p>Bubble Shooter Cat Rescueは13歳以上のプレイヤーを対象としています。13歳未満の子どもを対象としていません。一部の欧州諸国では、16歳未満のユーザーが特定のオンラインサービスを利用する際に保護者の同意が必要な場合があります。アプリはアカウント登録を要求せず、子どもから個人情報を意図的に収集しません。</p><p>将来のオンライン機能を通じて子どもが個人情報を提供したと思われる場合は、確認および適切な削除のためにご連絡ください。</p>",
+        retentionTitle: "8. 保持と削除",
+        retentionHtml: "<p>ローカルゲームデータは、アプリがインストールされている間、またはユーザー/OSがアプリデータを消去するまで端末に残ります。端末設定でアプリのストレージを消去するか、アプリをアンインストールして削除できます。Googleが処理する広告データは、Googleのポリシーおよび保持期間に従います。</p>",
+        securityTitle: "9. セキュリティ",
+        securityHtml: "<p>アプリは個人データの収集を最小限に抑えるよう設計されています。保存または送信方法に完全な安全性はありませんが、ゲームプレイデータを主にローカルに限定することでプライバシーリスクを軽減できます。</p>",
+        changesTitle: "10. 本ポリシーの変更",
+        changesHtml: "<p>新機能、広告、分析、購入、クラウド保存、オンラインサービスの追加など、アプリが変更された場合、本プライバシーポリシーを更新することがあります。更新版には新しい発効日が表示されます。</p>",
+        contactTitle: "11. お問い合わせ",
+        contactHtml: "<p>プライバシーに関する質問は、Bubble Shooter Cat Rescueのアプリストア掲載情報に表示されている開発者連絡先をご利用ください。</p><p>このページをウェブサイトに公開する場合は、アプリストア提出前にこの文を公式サポートメールまたは会社連絡先に置き換えてください。</p>",
+        footer: "発効日: 2026年6月1日。本プライバシーポリシーは、実際のアプリ機能、アプリストアのデータセーフティフォーム、地域別配信設定と一致している必要があります。"
+      },
+      es: {
+        label: "Español",
+        title: "Política de privacidad",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue es un juego de puzles de disparar burbujas para mayores de 13 años sobre rescatar gatos. Esta política explica qué información usa la app, qué datos permanecen en tu dispositivo y qué derechos pueden tener los jugadores en Europa.",
+        chips: ["13+", "Sin cuenta", "Google AdMob", "Anuncios recompensados", "Anuncios intersticiales", "Consentimiento EU/EEE"],
+        note: "Esta política está escrita para la versión actual del proyecto: juego Flutter/Flame, sin inicio de sesión, con publicidad de Google AdMob, sin compras dentro de la app habilitadas y progreso de juego almacenado principalmente de forma local. Mantén esta página coherente con el formulario de seguridad de datos de la tienda antes de cada lanzamiento.",
+        summaryTitle: "1. Resumen rápido",
+        summaryHtml: "<p>En la versión actual, Bubble Shooter Cat Rescue no te pide crear una cuenta y no solicita tu nombre, correo electrónico, número de teléfono, ubicación precisa, cámara, micrófono, contactos, fotos ni libreta de direcciones.</p><p>La app puede usar información local de juego, como progreso de nivel, puntuación, estrellas, gatos rescatados, potenciadores, ajustes y estado de la partida, para ofrecer la experiencia de juego. La app también usa Google AdMob para mostrar anuncios recompensados opcionales y anuncios intersticiales ocasionales. El progreso de juego está diseñado para permanecer en tu dispositivo salvo que una versión futura introduzca claramente servicios online y actualice esta política.</p>",
+        dataTitle: "2. Información almacenada o procesada",
+        dataHtml: "<p>La app actual puede procesar las siguientes categorías:</p><ul><li><strong>Progreso de juego:</strong> nivel desbloqueado, puntuación, estrellas, gatos rescatados, potenciadores y estado relacionado de la partida.</li><li><strong>Ajustes:</strong> preferencias de música y efectos de sonido.</li><li><strong>Estado técnico de la app:</strong> estado de carga, datos de niveles, recursos locales y eventos necesarios para que el juego funcione.</li><li><strong>Datos publicitarios:</strong> Google AdMob puede procesar datos necesarios para cargar, entregar, medir y proteger anuncios.</li></ul><p>Los datos de juego se usan para operar la app y no se usan para identificar personalmente al jugador dentro de la app.</p>",
+        sensorsTitle: "3. Uso de sensores de movimiento",
+        sensorsHtml: "<p>La app usa sensores de movimiento del dispositivo mediante el paquete Flutter <span class='tag'>sensors_plus</span> para crear efectos visuales como paralaje sutil o movimiento de fondo. Las lecturas de sensores se usan localmente para presentación visual/jugabilidad y no se usan para identificarte, rastrearte entre apps ni determinar tu ubicación precisa.</p>",
+        adsTitle: "4. Publicidad, analítica, compras y terceros",
+        adsHtml: "<p>Bubble Shooter Cat Rescue usa Google AdMob para mostrar anuncios recompensados opcionales y anuncios intersticiales ocasionales.</p><ul><li><strong>Anuncios recompensados:</strong> cuando un potenciador llega a 0, el jugador puede elegir ver un anuncio para recibir +1 potenciador. Hay un tiempo de espera para limitar visualizaciones repetidas.</li><li><strong>Anuncios intersticiales:</strong> los primeros 5 niveles no muestran anuncios intersticiales. Después, puede aparecer un anuncio tras ganar una partida y antes del panel de Victory con una cadencia limitada de 4/5 niveles.</li><li><strong>Compras dentro de la app:</strong> no habilitadas en la compilación actual.</li><li><strong>Analítica:</strong> no habilitada en la compilación actual.</li><li><strong>Servicios de terceros:</strong> Google AdMob, Flutter/Flame, recursos locales del juego y el paquete sensors para efectos visuales basados en movimiento.</li></ul><p>Cuando se solicitan anuncios, Google y sus socios pueden procesar información como identificadores del dispositivo, dirección IP, ubicación aproximada, datos de interacción con anuncios, diagnósticos y elecciones de consentimiento según sus propias políticas. La app solicita anuncios no personalizados por defecto para reducir el impacto en la privacidad.</p><p>Los jugadores en el EEE, Reino Unido y Suiza pueden ver un mensaje de consentimiento mediante Google User Messaging Platform antes de que se soliciten anuncios cuando la ley lo requiera. Más información en <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> y <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>.</p>",
+        useTitle: "5. Cómo se usa la información",
+        useHtml: "<ul><li>Para ejecutar el juego y mostrar niveles, burbujas, gatos, obstáculos, potenciadores, animaciones, audio y efectos visuales.</li><li>Para guardar y restaurar progreso y ajustes en el dispositivo.</li><li>Para mostrar anuncios recompensados opcionales y anuncios intersticiales limitados.</li><li>Para ajustar la jugabilidad, dificultad y experiencia dentro de la app.</li><li>Para diagnosticar el comportamiento de la app durante desarrollo y pruebas.</li></ul>",
+        europeTitle: "6. Jugadores en Europa: información GDPR/UK GDPR",
+        europeHtml: "<p>Si estás en el Espacio Económico Europeo, Reino Unido o Suiza, puedes tener derechos bajo la ley de protección de datos. Según tu situación, pueden incluir el derecho de acceso, rectificación, supresión, limitación u oposición a ciertos tratamientos, retirar el consentimiento cuando el tratamiento se base en consentimiento y reclamar ante tu autoridad local de protección de datos.</p><p>La mayor parte de la información de juego se almacena localmente en tu dispositivo. Puedes eliminarla borrando el almacenamiento de la app o desinstalándola. Para publicidad, Google AdMob y sus socios pueden actuar como responsables independientes o encargados del tratamiento según el servicio publicitario y tu elección de consentimiento.</p><p>Las bases legales principales son proporcionar la experiencia de juego solicitada, intereses legítimos en operar y proteger la app, y consentimiento cuando la ley lo requiera para almacenamiento/acceso relacionado con publicidad o anuncios personalizados. La app usa Google User Messaging Platform para solicitar o actualizar el consentimiento en Europa cuando sea necesario.</p>",
+        ageTitle: "7. Clasificación de edad y menores",
+        ageHtml: "<p>Bubble Shooter Cat Rescue está destinado a jugadores de 13 años o más. La app no está dirigida a menores de 13 años. En algunos países europeos, usuarios menores de 16 años pueden necesitar consentimiento de un padre, madre o tutor para ciertos servicios online. La app no requiere registro de cuenta ni recopila conscientemente información personal de menores.</p><p>Si crees que un menor ha proporcionado información personal mediante una función online futura, contáctanos para revisarlo y eliminarla cuando corresponda.</p>",
+        retentionTitle: "8. Conservación y eliminación",
+        retentionHtml: "<p>Los datos locales de juego permanecen en el dispositivo mientras la app esté instalada o hasta que el usuario o el sistema operativo borren los datos de la app. Puedes eliminar datos locales borrando el almacenamiento de la app en los ajustes del dispositivo o desinstalando la app. Los datos publicitarios procesados por Google siguen las políticas y periodos de conservación de Google.</p>",
+        securityTitle: "9. Seguridad",
+        securityHtml: "<p>Diseñamos la app para minimizar la recopilación de datos personales. Ningún método de almacenamiento o transmisión es perfectamente seguro, pero limitar los datos de juego principalmente al ámbito local ayuda a reducir el riesgo de privacidad.</p>",
+        changesTitle: "10. Cambios en esta política",
+        changesHtml: "<p>Podemos actualizar esta Política de privacidad cuando la app cambie, por ejemplo si se añaden nuevas funciones, anuncios, analítica, compras, guardado en la nube o servicios online. La versión actualizada mostrará una nueva fecha de vigencia.</p>",
+        contactTitle: "11. Contacto",
+        contactHtml: "<p>Para preguntas de privacidad, usa la información de contacto del desarrollador mostrada en la ficha de la tienda de Bubble Shooter Cat Rescue.</p><p>Si publicas esta página en un sitio web, sustituye esta frase por tu correo oficial de soporte o contacto de empresa antes de enviar la app a las tiendas.</p>",
+        footer: "Fecha de vigencia: 1 de junio de 2026. Esta Política de privacidad debe mantenerse coherente con las funciones reales de la app, los formularios de seguridad de datos de las tiendas y la configuración de distribución regional."
+      },
+      fr: {
+        label: "Français",
+        title: "Politique de confidentialité",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue est un jeu de puzzle de tir de bulles destiné aux 13 ans et plus, dans lequel il faut sauver des chats. Cette politique explique quelles informations l'app utilise, quelles données restent sur votre appareil et quels droits les joueurs en Europe peuvent avoir.",
+        chips: ["13+", "Pas de compte", "Google AdMob", "Publicités récompensées", "Publicités interstitielles", "Consentement UE/EEE"],
+        note: "Cette politique est rédigée pour la version actuelle du projet: jeu Flutter/Flame, sans connexion, avec publicité Google AdMob, sans achats intégrés activés et progression de jeu principalement stockée localement. Gardez cette page cohérente avec le formulaire de sécurité des données de l'app store avant chaque publication.",
+        summaryTitle: "1. Résumé rapide",
+        summaryHtml: "<p>Dans la version actuelle, Bubble Shooter Cat Rescue ne vous demande pas de créer un compte et ne demande pas votre nom, adresse e-mail, numéro de téléphone, localisation précise, caméra, micro, contacts, photos ou carnet d'adresses.</p><p>L'app peut utiliser des informations de jeu locales, comme la progression des niveaux, le score, les étoiles, les chats sauvés, les boosters, les paramètres et l'état de la partie, afin de fournir l'expérience de jeu. L'app utilise aussi Google AdMob pour afficher des publicités récompensées optionnelles et des publicités interstitielles occasionnelles. La progression de jeu est conçue pour rester sur votre appareil, sauf si une version future introduit clairement des services en ligne et met à jour cette politique.</p>",
+        dataTitle: "2. Informations stockées ou traitées",
+        dataHtml: "<p>L'app actuelle peut traiter les catégories suivantes:</p><ul><li><strong>Progression de jeu:</strong> niveau débloqué, score, étoiles, chats sauvés, boosters et état de jeu associé.</li><li><strong>Paramètres:</strong> préférences de musique et d'effets sonores.</li><li><strong>État technique de l'app:</strong> état de chargement, données de niveau, ressources locales et événements nécessaires au fonctionnement du jeu.</li><li><strong>Données publicitaires:</strong> Google AdMob peut traiter des données nécessaires au chargement, à la diffusion, à la mesure et à la protection des publicités.</li></ul><p>Les données de jeu servent à faire fonctionner l'app et ne sont pas utilisées pour vous identifier personnellement dans l'app.</p>",
+        sensorsTitle: "3. Utilisation des capteurs de mouvement",
+        sensorsHtml: "<p>L'app utilise les capteurs de mouvement de l'appareil via le package Flutter <span class='tag'>sensors_plus</span> pour créer des effets visuels tels qu'un léger parallaxe ou un mouvement de fond. Les mesures des capteurs sont utilisées localement pour la présentation visuelle/le gameplay et ne servent pas à vous identifier, vous suivre entre les apps ou déterminer votre localisation précise.</p>",
+        adsTitle: "4. Publicité, analytics, achats et tiers",
+        adsHtml: "<p>Bubble Shooter Cat Rescue utilise Google AdMob pour afficher des publicités récompensées optionnelles et des publicités interstitielles occasionnelles.</p><ul><li><strong>Publicités récompensées:</strong> lorsqu'un booster atteint 0, le joueur peut choisir de regarder une publicité pour recevoir +1 booster. Un délai limite les visionnages répétés.</li><li><strong>Publicités interstitielles:</strong> les 5 premiers niveaux n'affichent pas de publicité interstitielle. Ensuite, une publicité peut apparaître après une victoire et avant le panneau Victory selon une cadence limitée de 4/5 niveaux.</li><li><strong>Achats intégrés:</strong> non activés dans la version actuelle.</li><li><strong>Analytics:</strong> non activé dans la version actuelle.</li><li><strong>Services tiers:</strong> Google AdMob, Flutter/Flame, ressources locales du jeu et package sensors pour les effets visuels liés au mouvement.</li></ul><p>Lorsque des publicités sont demandées, Google et ses partenaires peuvent traiter des informations comme les identifiants de l'appareil, l'adresse IP, la localisation approximative, les données d'interaction publicitaire, les diagnostics et les choix de consentement conformément à leurs propres politiques. L'app demande par défaut des publicités non personnalisées afin de réduire l'impact sur la vie privée.</p><p>Les joueurs situés dans l'EEE, au Royaume-Uni et en Suisse peuvent voir un message de consentement via Google User Messaging Platform avant la demande de publicités lorsque la loi l'exige. En savoir plus: <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> et <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>.</p>",
+        useTitle: "5. Utilisation des informations",
+        useHtml: "<ul><li>Faire fonctionner le jeu et afficher niveaux, bulles, chats, obstacles, boosters, animations, audio et effets visuels.</li><li>Sauvegarder et restaurer la progression et les paramètres sur l'appareil.</li><li>Afficher des publicités récompensées optionnelles et des publicités interstitielles limitées.</li><li>Ajuster le gameplay, la difficulté et l'expérience utilisateur dans l'app.</li><li>Diagnostiquer le comportement de l'app pendant le développement et les tests.</li></ul>",
+        europeTitle: "6. Joueurs en Europe: informations RGPD/UK GDPR",
+        europeHtml: "<p>Si vous vous trouvez dans l'Espace économique européen, au Royaume-Uni ou en Suisse, vous pouvez disposer de droits en vertu de la législation sur la protection des données. Selon votre situation, ceux-ci peuvent inclure le droit d'accéder, corriger, supprimer, limiter ou vous opposer à certains traitements, retirer votre consentement lorsque le traitement est fondé sur le consentement, et déposer une plainte auprès de votre autorité locale de protection des données.</p><p>La plupart des informations de jeu sont stockées localement sur votre appareil. Vous pouvez les supprimer en effaçant le stockage de l'app ou en désinstallant l'app. Pour la publicité, Google AdMob et ses partenaires peuvent agir comme responsables indépendants ou sous-traitants selon le service publicitaire et votre choix de consentement.</p><p>Les principales bases légales sont la fourniture de l'expérience de jeu demandée, les intérêts légitimes liés au fonctionnement et à la sécurité de l'app, et le consentement lorsque la loi l'exige pour le stockage/l'accès lié à la publicité ou les publicités personnalisées. L'app utilise Google User Messaging Platform pour demander ou mettre à jour le consentement en Europe lorsque nécessaire.</p>",
+        ageTitle: "7. Âge et enfants",
+        ageHtml: "<p>Bubble Shooter Cat Rescue est destiné aux joueurs de 13 ans et plus. L'app ne vise pas les enfants de moins de 13 ans. Dans certains pays européens, les utilisateurs de moins de 16 ans peuvent avoir besoin du consentement d'un parent ou tuteur pour certains services en ligne. L'app ne nécessite pas d'inscription de compte et ne collecte pas sciemment d'informations personnelles auprès d'enfants.</p><p>Si vous pensez qu'un enfant a fourni des informations personnelles via une future fonctionnalité en ligne, veuillez nous contacter afin que nous puissions les examiner et les supprimer le cas échéant.</p>",
+        retentionTitle: "8. Conservation et suppression",
+        retentionHtml: "<p>Les données de jeu locales restent sur l'appareil tant que l'app est installée ou jusqu'à ce que l'utilisateur/le système d'exploitation efface les données de l'app. Vous pouvez supprimer les données locales en effaçant le stockage de l'app dans les paramètres de l'appareil ou en désinstallant l'app. Les données publicitaires traitées par Google suivent les politiques et durées de conservation de Google.</p>",
+        securityTitle: "9. Sécurité",
+        securityHtml: "<p>Nous concevons l'app afin de minimiser la collecte de données personnelles. Aucune méthode de stockage ou de transmission n'est parfaitement sécurisée, mais limiter principalement les données de gameplay au stockage local aide à réduire les risques pour la vie privée.</p>",
+        changesTitle: "10. Modifications de cette politique",
+        changesHtml: "<p>Nous pouvons mettre à jour cette Politique de confidentialité lorsque l'app change, par exemple si de nouvelles fonctionnalités, publicités, analytics, achats, sauvegardes cloud ou services en ligne sont ajoutés. La version mise à jour indiquera une nouvelle date d'entrée en vigueur.</p>",
+        contactTitle: "11. Contact",
+        contactHtml: "<p>Pour toute question relative à la confidentialité, veuillez utiliser les coordonnées du développeur affichées sur la fiche app store de Bubble Shooter Cat Rescue.</p><p>Si vous publiez cette page sur un site web, remplacez cette phrase par votre adresse e-mail de support officielle ou les coordonnées de votre société avant de soumettre l'app aux stores.</p>",
+        footer: "Date d'entrée en vigueur: 1er juin 2026. Cette Politique de confidentialité doit rester cohérente avec les fonctionnalités réelles de l'app, les formulaires de sécurité des données des stores et les paramètres de distribution régionale."
+      },
+      de: {
+        label: "Deutsch",
+        title: "Datenschutzrichtlinie",
+        subtitle: "Bubble Shooter Cat Rescue",
+        intro: "Bubble Shooter Cat Rescue ist ein Bubble-Shooter-Puzzlespiel ab 13 Jahren, in dem Katzen gerettet werden. Diese Richtlinie erklärt, welche Informationen die App verwendet, welche Daten auf deinem Gerät bleiben und welche Rechte Spieler in Europa haben können.",
+        chips: ["13+", "Kein Konto", "Google AdMob", "Rewarded Ads", "Interstitial Ads", "EU/EWR-Einwilligung"],
+        note: "Diese Richtlinie bezieht sich auf die aktuelle Projektversion: Flutter/Flame-Spiel, kein Login, Google-AdMob-Werbung, keine aktivierten In-App-Käufe und Spielstand hauptsächlich lokal gespeichert. Halte diese Seite vor jeder Veröffentlichung konsistent mit dem Data-Safety-Formular im App Store.",
+        summaryTitle: "1. Kurzübersicht",
+        summaryHtml: "<p>In der aktuellen Version verlangt Bubble Shooter Cat Rescue kein Konto und fragt nicht nach Name, E-Mail-Adresse, Telefonnummer, genauem Standort, Kamera, Mikrofon, Kontakten, Fotos oder Adressbuch.</p><p>Die App kann lokale Spielinformationen wie Level-Fortschritt, Punktzahl, Sterne, gerettete Katzen, Booster, Einstellungen und Spielstatus verwenden, um das Spielerlebnis bereitzustellen. Die App verwendet außerdem Google AdMob, um optionale Rewarded Ads und gelegentliche Interstitial Ads anzuzeigen. Der Spielstand ist so vorgesehen, dass er auf deinem Gerät bleibt, sofern eine künftige Version nicht klar Online-Dienste einführt und diese Richtlinie aktualisiert.</p>",
+        dataTitle: "2. Gespeicherte oder verarbeitete Informationen",
+        dataHtml: "<p>Die aktuelle App kann die folgenden Kategorien verarbeiten:</p><ul><li><strong>Spielstand:</strong> freigeschaltetes Level, Punktzahl, Sterne, gerettete Katzen, Booster und zugehöriger Spielstatus.</li><li><strong>Einstellungen:</strong> Musik- und Soundeffekt-Präferenzen.</li><li><strong>Technischer App-Status:</strong> Ladezustand, Leveldaten, lokale Assets und Ereignisse, die zum Ausführen des Spiels erforderlich sind.</li><li><strong>Werbedaten:</strong> Google AdMob kann Daten verarbeiten, die zum Laden, Ausliefern, Messen und Schützen von Anzeigen erforderlich sind.</li></ul><p>Spieldaten werden zum Betrieb der App verwendet und nicht dazu, dich in der App persönlich zu identifizieren.</p>",
+        sensorsTitle: "3. Verwendung von Bewegungssensoren",
+        sensorsHtml: "<p>Die App nutzt Bewegungssensoren des Geräts über das Flutter-Paket <span class='tag'>sensors_plus</span>, um visuelle Effekte wie dezente Parallaxe oder Hintergrundbewegung zu erzeugen. Sensordaten werden lokal für Darstellung/Gameplay genutzt und nicht zur Identifizierung, zum Tracking über Apps hinweg oder zur Bestimmung deines genauen Standorts verwendet.</p>",
+        adsTitle: "4. Werbung, Analytics, Käufe und Dritte",
+        adsHtml: "<p>Bubble Shooter Cat Rescue verwendet Google AdMob, um optionale Rewarded Ads und gelegentliche Interstitial Ads anzuzeigen.</p><ul><li><strong>Rewarded Ads:</strong> Wenn ein Booster-Item auf 0 fällt, kann der Spieler freiwillig eine Anzeige ansehen, um +1 Booster zu erhalten. Eine Abklingzeit begrenzt wiederholtes Ansehen.</li><li><strong>Interstitial Ads:</strong> In den ersten 5 Leveln werden keine Interstitial Ads angezeigt. Danach kann nach einem Sieg und vor dem Victory-Panel in einem begrenzten 4/5-Level-Rhythmus eine Anzeige erscheinen.</li><li><strong>In-App-Käufe:</strong> in der aktuellen Version nicht aktiviert.</li><li><strong>Analytics:</strong> in der aktuellen Version nicht aktiviert.</li><li><strong>Drittanbieter:</strong> Google AdMob, Flutter/Flame, lokale Spielassets und das sensors-Paket für bewegungsbasierte visuelle Effekte.</li></ul><p>Wenn Anzeigen angefordert werden, können Google und Partner gemäß ihren eigenen Richtlinien Informationen wie Gerätekennungen, IP-Adresse, ungefähren Standort, Anzeigeninteraktionsdaten, Diagnosedaten und Einwilligungsentscheidungen verarbeiten. Die App fordert standardmäßig nicht personalisierte Anzeigen an, um die Auswirkungen auf die Privatsphäre zu reduzieren.</p><p>Spieler im EWR, Vereinigten Königreich und in der Schweiz können, sofern gesetzlich erforderlich, vor Anzeigenanfragen eine Einwilligungsnachricht über Google User Messaging Platform sehen. Weitere Informationen: <a href='https://policies.google.com/privacy'>Google Privacy Policy</a> und <a href='https://support.google.com/admob/answer/6128543'>AdMob privacy information</a>.</p>",
+        useTitle: "5. Verwendung der Informationen",
+        useHtml: "<ul><li>Um das Spiel auszuführen und Level, Blasen, Katzen, Hindernisse, Booster, Animationen, Audio und visuelle Effekte anzuzeigen.</li><li>Um Fortschritt und Einstellungen auf dem Gerät zu speichern und wiederherzustellen.</li><li>Um optionale Rewarded Ads und begrenzte Interstitial Ads anzuzeigen.</li><li>Um Gameplay, Schwierigkeit und Nutzererlebnis in der App anzupassen.</li><li>Um das App-Verhalten während Entwicklung und Tests zu diagnostizieren.</li></ul>",
+        europeTitle: "6. Spieler in Europa: Informationen nach DSGVO/UK GDPR",
+        europeHtml: "<p>Wenn du dich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder in der Schweiz befindest, kannst du Rechte nach Datenschutzrecht haben. Je nach Situation können dazu das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch gegen bestimmte Verarbeitungen, der Widerruf einer Einwilligung sowie eine Beschwerde bei deiner lokalen Datenschutzbehörde gehören.</p><p>Die meisten Spielinformationen werden lokal auf deinem Gerät gespeichert. Du kannst sie löschen, indem du den App-Speicher löschst oder die App deinstallierst. Für Werbung können Google AdMob und seine Partner je nach Werbedienst und Einwilligungsentscheidung als unabhängige Verantwortliche oder Auftragsverarbeiter handeln.</p><p>Die wichtigsten Rechtsgrundlagen sind die Bereitstellung des gewünschten Spielerlebnisses, berechtigte Interessen am Betrieb und Schutz der App sowie Einwilligung, wenn das Gesetz sie für werbebezogene Speicherung/Zugriff oder personalisierte Werbung verlangt. Die App nutzt Google User Messaging Platform, um in Europa bei Bedarf Einwilligungen abzufragen oder zu aktualisieren.</p>",
+        ageTitle: "7. Altersfreigabe und Kinder",
+        ageHtml: "<p>Bubble Shooter Cat Rescue richtet sich an Spieler ab 13 Jahren. Die App richtet sich nicht an Kinder unter 13 Jahren. In einigen europäischen Ländern benötigen Nutzer unter 16 Jahren für bestimmte Online-Dienste möglicherweise die Zustimmung eines Elternteils oder Erziehungsberechtigten. Die App erfordert keine Kontoregistrierung und sammelt nicht wissentlich personenbezogene Daten von Kindern.</p><p>Wenn du glaubst, dass ein Kind über eine künftige Online-Funktion personenbezogene Daten bereitgestellt hat, kontaktiere uns bitte, damit wir dies prüfen und die Daten gegebenenfalls löschen können.</p>",
+        retentionTitle: "8. Aufbewahrung und Löschung",
+        retentionHtml: "<p>Lokale Spieldaten bleiben auf dem Gerät, solange die App installiert ist oder bis der Nutzer/das Betriebssystem die App-Daten löscht. Du kannst lokale Daten löschen, indem du den App-Speicher in den Geräteeinstellungen löschst oder die App deinstallierst. Von Google verarbeitete Werbedaten unterliegen den Richtlinien und Aufbewahrungsfristen von Google.</p>",
+        securityTitle: "9. Sicherheit",
+        securityHtml: "<p>Wir gestalten die App so, dass die Erhebung personenbezogener Daten minimiert wird. Keine Speicher- oder Übertragungsmethode ist vollkommen sicher, aber die Beschränkung von Gameplay-Daten hauptsächlich auf lokale Nutzung hilft, Datenschutzrisiken zu verringern.</p>",
+        changesTitle: "10. Änderungen dieser Richtlinie",
+        changesHtml: "<p>Wir können diese Datenschutzrichtlinie aktualisieren, wenn sich die App ändert, etwa wenn neue Funktionen, Werbung, Analytics, Käufe, Cloud-Speicher oder Online-Dienste hinzukommen. Die aktualisierte Version zeigt ein neues Gültigkeitsdatum.</p>",
+        contactTitle: "11. Kontakt",
+        contactHtml: "<p>Für Datenschutzfragen nutze bitte die Entwickler-Kontaktdaten, die im App-Store-Eintrag von Bubble Shooter Cat Rescue angezeigt werden.</p><p>Wenn du diese Seite auf einer Website veröffentlichst, ersetze diesen Satz vor der Einreichung bei den Stores durch deine offizielle Support-E-Mail oder Unternehmensdaten.</p>",
+        footer: "Gültig ab: 1. Juni 2026. Diese Datenschutzrichtlinie sollte mit den tatsächlichen App-Funktionen, den Data-Safety-Formularen der App Stores und den regionalen Vertriebseinstellungen übereinstimmen."
+      }
+    };
+
+    const storageKey = "bubbleShooterCatRescuePrivacyLang";
+
+    function preferredLang() {
+      const query = new URLSearchParams(location.search).get("lang");
+      if (query && t[query]) return query;
+      const stored = localStorage.getItem(storageKey);
+      if (stored && t[stored]) return stored;
+      return "en";
+    }
+
+    function renderLangButtons(active) {
+      const wrap = document.getElementById("langs");
+      wrap.innerHTML = "";
+      Object.keys(t).forEach((code) => {
+        const item = t[code];
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `lang-btn${code === active ? " active" : ""}`;
+        btn.textContent = item.label;
+        btn.addEventListener("click", () => applyLang(code));
+        wrap.appendChild(btn);
+      });
+    }
+
+    function applyLang(code) {
+      const d = t[code] || t.en;
+      document.documentElement.lang = code;
+      document.title = `${d.subtitle} - ${d.title}`;
+      document.getElementById("title").textContent = d.title;
+      document.getElementById("subtitle").textContent = d.subtitle;
+      document.getElementById("intro").textContent = d.intro;
+      document.getElementById("note").textContent = d.note;
+      document.getElementById("footer").textContent = d.footer;
+
+      const chips = document.getElementById("chips");
+      chips.innerHTML = "";
+      d.chips.forEach((text) => {
+        const node = document.createElement("span");
+        node.className = "chip";
+        node.textContent = text;
+        chips.appendChild(node);
+      });
+
+      const content = document.getElementById("content");
+      content.innerHTML = "";
+      sections.forEach((key) => {
+        const article = document.createElement("article");
+        article.className = "section glass";
+        article.innerHTML = `<h3>${d[`${key}Title`]}</h3>${d[`${key}Html`]}`;
+        content.appendChild(article);
+      });
+
+      renderLangButtons(code);
+      localStorage.setItem(storageKey, code);
+    }
+
+    applyLang(preferredLang());
+  </script>
+</body>
+</html>
